@@ -1,9 +1,9 @@
-Code & Cardio Blog 🏃‍♀️☕💻
+# Code & Cardio Blog 🏃‍♀️☕💻
 
 Blog pessoal minimalista (dark + neon) feito com Next.js 15 (App Router) e Tailwind CSS.
 Foco: rotina de treino pela manhã, trabalho durante o dia e estudos fullstack à noite.
 
-✨ Visão Geral
+## ✨ Visão Geral
 
 Design: fundo preto, detalhes laranja e rosa, transparências e blur.
 
@@ -13,7 +13,7 @@ Conteúdo: sem dados mockados — os posts do usuário são salvos no navegador 
 
 Interação: curtir posts (client), criar/editar substituindo pelo mesmo slug, e apagar posts criados.
 
-🚀 Recursos
+## 🚀 Recursos
 
 Navegação global (Home / Sobre).
 
@@ -27,7 +27,7 @@ Botão Curtir e Apagar post (somente para posts do usuário, protegendo os do pr
 
 Tema escuro responsivo, tipografia legível e acessibilidade básica.
 
-🧱 Tech Stack
+## 🧱 Tech Stack
 
 Next.js 15 (App Router + Metadata)
 
@@ -37,21 +37,22 @@ TypeScript
 
 Tailwind CSS
 
-📦 Scripts NPM
+## 📦 Scripts NPM
 npm install          # instala dependências
 npm run dev          # ambiente de desenvolvimento
 npm run build        # build de produção
 npm start            # roda o build
-# opcional:
+
+opcional:
 npx next telemetry disable   # desativa telemetria anônima do Next.js
 
-🖥️ Pré-requisitos
+## 🖥️ Pré-requisitos
 
 Node.js ≥ 18.18 (recomendado Node 20+)
 
 npm, pnpm ou yarn (use um gerenciador)
 
-🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 app/
   layout.tsx                 # Layout global (header, footer)
   page.tsx                   # Home: lista de posts do cache + botão Criar
@@ -81,12 +82,12 @@ O projeto usa @/ para imports absolutos. Garanta no tsconfig.json:
   }
 }
 
-▶️ Como Rodar
+## ▶️ Como Rodar
 npm install
 npm run dev
-# abra http://localhost:3000
+abra http://localhost:3000
 
-✍️ Como Criar um Post
+## ✍️ Como Criar um Post
 
 Clique em “➕ Criar novo post” (no canto direito do header da Home) ou acesse /new.
 
@@ -98,7 +99,7 @@ O slug é gerado a partir do título (se repetir, o post é substituído).
 
 O botão 🗑️ Apagar aparece só em posts criados por você (cache do navegador).
 
-♻️ Como Apagar um Post
+## ♻️ Como Apagar um Post
 
 Na Home: botão 🗑️ Apagar no card (canto superior direito).
 
@@ -106,7 +107,7 @@ Na página do post: botão Apagar post (se for do usuário).
 
 A remoção atualiza a lista automaticamente.
 
-🎨 Paleta & Estilo
+## 🎨 Paleta & Estilo
 
 Fundo: preto (#000, com gradientes suaves em globals.css)
 
@@ -118,7 +119,7 @@ Transparência: bg-black/40 + backdrop-blur-md
 
 Sombra suave: shadow-glow (configurada no Tailwind)
 
-♿ Acessibilidade & SEO
+## ♿ Acessibilidade & SEO
 
 aria-label em links de ação.
 
@@ -126,7 +127,7 @@ Metadados por página via metadata/generateMetadata.
 
 Contraste alto e tipografia legível.
 
-⚠️ Limitações (por design)
+## ⚠️ Limitações (por design)
 
 Os posts ficam apenas no navegador onde foram criados (cache local).
 
@@ -134,7 +135,7 @@ Se limpar o cache ou abrir em outro dispositivo, eles não aparecem.
 
 Links de posts só funcionam naquele navegador (pois o conteúdo é carregado do localStorage).
 
-🛣️ Roadmap (sugestões de evolução)
+## 🛣️ Roadmap (sugestões de evolução)
 
 Persistência real: API Routes + banco (ex.: Prisma + SQLite/Postgres).
 
